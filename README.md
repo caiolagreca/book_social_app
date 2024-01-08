@@ -1,8 +1,6 @@
 
 <h1>BOOK SOCAIL APP 📖</h1>
 
-![image](https://github.com/caiolagreca/amazon_clone/blob/main/src/images/amazon_gif.gif)
-
 <h2>Main Features ⚡</h2>
 <ul>
   <li>Create user and perform login</li>
