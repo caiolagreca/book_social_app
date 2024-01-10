@@ -5,11 +5,12 @@ import AdminNavbar from "./Admin/AdminNavbar";
 import { useSelector } from "react-redux";
 import AccountVerificationAlertWarning from "./Alert/AccountVerificationAlertWarning";
 import AccountVerificationSuccessAlert from "./Alert/AccountVerificationSuccessAlert";
+import { Outlet } from "react-router-dom";
 
 function Navbar() {
   //get user from store
   const state = useSelector((state) => state.users);
-  const { userAuth, profile } = state;
+  const { userAuth } = state;
   const isAdmin = userAuth?.isAdmin;
 
   //account verification
@@ -33,6 +34,7 @@ function Navbar() {
           {serverErr} {appErr}
         </h2>
       ) : null}
+      <Outlet />
     </>
   );
 }
