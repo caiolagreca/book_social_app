@@ -21,6 +21,7 @@ const navigation = [
   { name: "Authors", href: "/users", current: false },
   { name: "Add Category", href: "/add-category", current: false },
   { name: "Category List", href: "/category-list", current: false },
+  { name: "Change your password", href: "/update-password", current: false },
 ];
 
 function classNames(...classes) {
@@ -32,7 +33,6 @@ const AdminNavbar = ({ isLogin }) => {
   //Navigation
   const userNavigation = [
     { name: "Your Profile", href: `/profile/${isLogin?._id}` },
-    { name: "Change your password", href: "/update-password" },
   ];
 
   return (
