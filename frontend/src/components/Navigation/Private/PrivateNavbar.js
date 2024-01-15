@@ -26,7 +26,7 @@ function classNames(...classes) {
 const PrivateNavbar = ({ isLogin }) => {
   const dispatch = useDispatch();
   const userNavigation = [
-    { name: "Your Profile", href: `/profile` },
+    { name: "Your Profile", href: `/profile/${isLogin?._id}` },
     { name: "Change your password", href: "/update-password" },
   ];
 
@@ -55,7 +55,6 @@ const PrivateNavbar = ({ isLogin }) => {
                 <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
                   {navigation.map((item) => (
                     <Link
-                      
                       key={item.name}
                       to={item.href}
                       className={classNames(

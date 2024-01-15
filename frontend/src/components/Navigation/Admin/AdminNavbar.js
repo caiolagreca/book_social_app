@@ -32,7 +32,7 @@ const AdminNavbar = ({ isLogin }) => {
   const dispatch = useDispatch();
   //Navigation
   const userNavigation = [
-    { name: "Your Profile", href: `/profile/${isLogin?._id}`, current: false },
+    { name: "Your Profile", href: `/profile/${isLogin?._id}` },
   ];
 
   return (
@@ -68,7 +68,7 @@ const AdminNavbar = ({ isLogin }) => {
                           : "text-gray-300 hover:bg-gray-700 hover:text-white",
                         "px-3 py-2 rounded-md text-sm font-medium"
                       )}
-                      aria-current={item.current ? "page" : undefined}
+                      /* aria-current={item.current ? "page" : undefined} */
                     >
                       {item.name}
                     </Link>

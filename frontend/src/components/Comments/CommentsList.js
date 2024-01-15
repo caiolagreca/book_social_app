@@ -8,7 +8,6 @@ export default function CommentsList({ comments }) {
   const user = useSelector((state) => state?.users);
   const { userAuth } = user;
   const isLoginUser = userAuth?._id;
-  console.log(isLoginUser);
   const dispatch = useDispatch();
 
   return (

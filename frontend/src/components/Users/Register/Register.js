@@ -38,7 +38,7 @@ const Register = () => {
 
   const navigate = useNavigate();
   if (registered) {
-    navigate("/profile");
+    navigate(`/profile/${registered._id}`);
   }
   return (
     <section className="relative py-20 2xl:py-40 bg-gray-800 overflow-hidden">
