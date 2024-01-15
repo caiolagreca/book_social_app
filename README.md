@@ -21,6 +21,8 @@
 <h2>Services Used 🛠</h2>
 <ul>
   <li>Vercel</li>
+  <li>Sendgrid</li>
+  <li>Cloudinary</li>
 </ul>
 
 <h2>Responsive Design 📱</h2>
