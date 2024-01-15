@@ -32,7 +32,7 @@ const AdminNavbar = ({ isLogin }) => {
   const dispatch = useDispatch();
   //Navigation
   const userNavigation = [
-    { name: "Your Profile", href: `/profile/${isLogin?._id}` },
+    { name: "Your Profile", href: `/profile/${isLogin?._id}`, current: false },
   ];
 
   return (
