@@ -15,13 +15,12 @@ import { useDispatch } from "react-redux";
 import { logoutUserAction } from "../../../redux/slices/users/usersSlices";
 
 const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "Create", href: "/create-post", current: false },
-  { name: "Posts", href: "/posts", current: false },
-  { name: "Authors", href: "/users", current: false },
-  { name: "Add Category", href: "/add-category", current: false },
-  { name: "Category List", href: "/category-list", current: false },
-  { name: "Change your password", href: "/update-password", current: false },
+  { name: "Home", href: "/" },
+  { name: "Create", href: "/create-post" },
+  { name: "Posts", href: "/posts" },
+  { name: "Authors", href: "/users" },
+  { name: "Add Category", href: "/add-category" },
+  { name: "Category List", href: "/category-list" },
 ];
 
 function classNames(...classes) {
@@ -33,6 +32,7 @@ const AdminNavbar = ({ isLogin }) => {
   //Navigation
   const userNavigation = [
     { name: "Your Profile", href: `/profile/${isLogin?._id}` },
+    { name: "Change your password", href: "/update-password" },
   ];
 
   return (
@@ -68,7 +68,7 @@ const AdminNavbar = ({ isLogin }) => {
                           : "text-gray-300 hover:bg-gray-700 hover:text-white",
                         "px-3 py-2 rounded-md text-sm font-medium"
                       )}
-                      /* aria-current={item.current ? "page" : undefined} */
+                      aria-current={item.current ? "page" : undefined}
                     >
                       {item.name}
                     </Link>
