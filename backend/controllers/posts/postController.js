@@ -24,13 +24,13 @@ const createPostController = expressAsyncHandler(async (req, res) => {
     );
   }
 
-  if (
+  /* if (
     req?.user?.accountType === "Starter Account" &&
     req?.user?.postCount === 2
   )
     throw new Error(
       "Starter account can only create two posts. Get more Followers"
-    );
+    ); */
   //get the path to image
   const localPath = `public/images/posts/${req?.file?.filename}`;
   //upload to cloudinary
