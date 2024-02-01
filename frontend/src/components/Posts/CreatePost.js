@@ -72,7 +72,7 @@ export default function CreatePost() {
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
             <p className="font-medium text-green-600 hover:text-indigo-500">
-              Share your ideas to the word. Your post must be free from
+              Share your books to the world. Your post must be free from
               profanity
             </p>
           </p>

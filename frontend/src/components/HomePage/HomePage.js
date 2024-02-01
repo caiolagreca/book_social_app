@@ -16,7 +16,6 @@ function HomePage() {
                 <span className="text-yellow-500">by creating a post</span>
               </h2>
               <p className="mb-12 lg:mb-16 2xl:mb-24 text-xl text-gray-100">
-                {/*  */}
                 Your post must be free from racism and unhealthy words
               </p>
               <a
