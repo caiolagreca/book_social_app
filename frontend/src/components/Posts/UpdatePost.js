@@ -8,12 +8,10 @@ import {
   fetchPostDetailsAction,
   updatePostAction,
 } from "../../redux/slices/posts/postSlices";
-import { CategoryDropdown } from "../Categories/CategoryDropdown";
 
 const formSchema = Yup.object({
   title: Yup.string().required("Title is required"),
   description: Yup.string().required("Description is required"),
-  //category: Yup.object().required("Category is required"),
 });
 
 export default function UpdatePost() {
@@ -36,7 +34,6 @@ export default function UpdatePost() {
     initialValues: {
       title: postDetails?.title,
       description: postDetails?.description,
-      //category: postDetails?.category,
     },
     onSubmit: (values) => {
       const data = {
@@ -94,14 +91,6 @@ export default function UpdatePost() {
                   {formik.touched.title && formik.errors.title}
                 </div>
               </div>
-
-              {/* <CategoryDropdown
-                value={formik.values.category?.categoryTitle}
-                onChange={formik.setFieldValue}
-                onBlur={formik.setFieldTouched}
-                error={formik.errors.category}
-                touched={formik.touched.category}
-              /> */}
               <div>
                 <label
                   htmlFor="password"

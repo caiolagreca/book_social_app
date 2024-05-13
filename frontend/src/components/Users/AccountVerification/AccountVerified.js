@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { CheckIcon } from "@heroicons/react/outline";
 import { Link, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-/* import { verifyAccountAction } from "../../../redux/slices/accountVerification/accVerificationSlices"; */
 import { logoutUserAction } from "../../../redux/slices/users/usersSlices";
 import { verifyAccountAction } from "../../../redux/slices/accountVerification/accVerificationSlices";
 export default function AccountVerified() {

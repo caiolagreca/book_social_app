@@ -3,8 +3,6 @@ import PublicNavbar from "./Public/PublicNavbar";
 import PrivateNavbar from "./Private/PrivateNavbar";
 import AdminNavbar from "./Admin/AdminNavbar";
 import { useSelector } from "react-redux";
-import AccountVerificationAlertWarning from "./Alert/AccountVerificationAlertWarning";
-import AccountVerificationSuccessAlert from "./Alert/AccountVerificationSuccessAlert";
 import { Outlet } from "react-router-dom";
 
 function Navbar() {
@@ -26,9 +24,7 @@ function Navbar() {
       ) : (
         <PublicNavbar />
       )}
-      {!userAuth?.isVerified && <AccountVerificationAlertWarning />}
       {loading && <h2 className="text-center">Loading...</h2>}
-      {token && <AccountVerificationSuccessAlert />}
       {appErr || serverErr ? (
         <h2 className="text-center text-red-500">
           {serverErr} {appErr}

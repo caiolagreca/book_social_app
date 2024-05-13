@@ -38,9 +38,9 @@ export default function Profile() {
   }, [id, dispatch, followed, unfollowed]);
   console.log(profile?.viewedBy);
 
-  const sendEmailNavigate = () => {
+ /*  const sendEmailNavigate = () => {
     navigate(`/send-email/${profile?.email}/${profile?._id}`);
-  };
+  }; */
 
   const isLoginUser = userAuth?._id === profile?._id;
   return (
@@ -185,7 +185,7 @@ export default function Profile() {
                                 )}
                               </>
                               {/* Send Mail */}
-                              <button
+                             {/*  <button
                                 onClick={sendEmailNavigate}
                                 className="inline-flex justify-center bg-indigo-900 px-4 py-2 border border-yellow-700 shadow-sm text-sm font-medium rounded-md text-gray-700  hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
                               >
@@ -196,7 +196,7 @@ export default function Profile() {
                                 <span className="text-base mr-2  text-bold text-yellow-500">
                                   Send Message
                                 </span>
-                              </button>
+                              </button> */}
                             </div>
                           </div>
                         </div>

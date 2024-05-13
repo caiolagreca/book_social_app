@@ -69,25 +69,6 @@ const UsersListItem = (user) => {
                 Block
               </button>
             )}
-
-            <Link
-              to={`/send-email/${user?.user?.email}/${user?.user?.id}`}
-              className="inline-flex  justify-center bg-green-700 px-2   border border-yellow-700 shadow-sm text-sm font-medium rounded-md text-gray-700  hover:bg-green-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
-            >
-              <MailIcon
-                className="-ml-1 mr-2 h-5 w-5 text-gray-200"
-                aria-hidden="true"
-              />
-              <span className="text-base mr-2  text-bold text-yellow-500">
-                Message
-              </span>
-            </Link>
-          </div>
-          <div className="w-full lg:w-1/12 px-4">
-            <div className="flex items-center">
-              {/* Send Mail */}
-              <div></div>
-            </div>
           </div>
         </div>
       </div>
